@@ -30,8 +30,11 @@ mv /root/tmp/privoxy /etc/config/privoxy
 3、设置防火墙
 进入路由器的防火墙-自定义规则
 添加规则
+
 iptables -t nat -N http_ua_drop
+
 iptables -t nat -I PREROUTING -p tcp --dport 80 -j http_ua_drop
+
 iptables -t nat -A http_ua_drop -d 0.0.0.0/8 -j RETURN
 iptables -t nat -A http_ua_drop -d 127.0.0.0/8 -j RETURN
 iptables -t nat -A http_ua_drop -d 192.168.0.0/16 -j RETURN
