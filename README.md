@@ -56,7 +56,7 @@ iptables -t nat -A http_ua_drop -p tcp -j REDIRECT --to-port 8118
 
 重启防火墙
 
-（ps：此次的
+（ps：此处的
 iptables -t nat -A http_ua_drop -d 192.168.0.0/16 -j RETURN
 应该根据实际路由ip进行修改
 ）
