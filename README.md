@@ -56,6 +56,11 @@ iptables -t nat -A http_ua_drop -p tcp -j REDIRECT --to-port 8118
 
 重启防火墙
 
+（ps：此次的
+iptables -t nat -A http_ua_drop -d 192.168.0.0/16 -j RETURN
+应该根据实际路由ip进行修改
+）
+
 4、利用privoxy替换ua
 在所在的局域网中访问http://config.privoxy.org/edit-actions-list?f=0
 点击Edit编辑按钮，Action 那一列中，hide-user-agent 改选为 Enable（绿色），在右侧 User Agent string to send 框中填写 Privoxy/1.0；
