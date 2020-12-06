@@ -13,13 +13,13 @@
 2、配置Privoxy
 
 界面方式：
-·Files and Directories（文件和目录）：Action Files 删除到只剩一个框，填入 match-all.action。Filter files 和 Trust files 均留空。
+●Files and Directories（文件和目录）：Action Files 删除到只剩一个框，填入 match-all.action。Filter files 和 Trust files 均留空。
 
-·Access Control（访问控制）：Listen addresses 填写 0.0.0.0:8118，Permit access 填写 192.168.0.0/16。Enable action file editor 勾选。
+●Access Control（访问控制）：Listen addresses 填写 0.0.0.0:8118，Permit access 填写 192.168.0.0/16。Enable action file editor 勾选。
 
-·Miscellaneous（杂项）：Accept intercepted requests 勾选。
+●Miscellaneous（杂项）：Accept intercepted requests 勾选。
 
-·Logging（日志）：全部取消勾选。
+●Logging（日志）：全部取消勾选。
 
 点击 Save & Apply。
 
