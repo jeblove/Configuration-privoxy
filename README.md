@@ -53,6 +53,7 @@ iptables -t nat -A http_ua_drop -d 127.0.0.0/8 -j RETURN
 iptables -t nat -A http_ua_drop -d 192.168.0.0/16 -j RETURN
 
 iptables -t nat -A http_ua_drop -p tcp -j REDIRECT --to-port 8118
+
 重启防火墙
 
 4、利用privoxy替换ua
