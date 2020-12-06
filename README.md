@@ -25,11 +25,17 @@
 点击 Save & Apply。
 
 命令方式：
+
 wget -P /root/tmp https://raw.githubusercontent.com/jeblove/Configuration-privoxy/main/privoxy
+
 mv /root/tmp/privoxy /etc/config/privoxy
+
 启动privoxy
+
 /etc/init.d/privoxy start
+
 设置开启启动
+
 /etc/init.d/privoxy enable
 
 3、设置防火墙
