@@ -25,7 +25,7 @@
 点击 Save & Apply。
 
 命令方式：
-wget -P /root/tmp https://gitee.com/jeblove/configuration-privoxy/raw/master/privoxy
+wget -P /root/tmp https://raw.githubusercontent.com/jeblove/Configuration-privoxy/main/privoxy
 mv /root/tmp/privoxy /etc/config/privoxy
 启动privoxy
 /etc/init.d/privoxy start
