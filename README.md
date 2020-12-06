@@ -58,6 +58,7 @@ iptables -t nat -A http_ua_drop -p tcp -j REDIRECT --to-port 8118
 4、利用privoxy替换ua
 在所在的局域网中访问http://config.privoxy.org/edit-actions-list?f=0
 点击Edit编辑按钮，Action 那一列中，hide-user-agent 改选为 Enable（绿色），在右侧 User Agent string to send 框中填写 Privoxy/1.0；
+
 其它全部选择为 No Change （紫色）。点击 Submit 按钮。
 
 5、确认效果
