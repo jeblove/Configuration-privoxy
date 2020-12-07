@@ -34,7 +34,7 @@ mv /root/tmp/privoxy /etc/config/privoxy
 
 /etc/init.d/privoxy start
 
-设置开启启动
+设置开机启动
 
 /etc/init.d/privoxy enable
 
